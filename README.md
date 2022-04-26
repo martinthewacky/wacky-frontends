@@ -1,6 +1,6 @@
 # Wacky Frontends
 
-A collection of frontend projects attempted from Frontend Mentor.
+A collection of frontend projects attempted from [Frontend Mentor](https://frontendmentor.io).
 
 These projects range from simple components to full-fledged websites.
 
