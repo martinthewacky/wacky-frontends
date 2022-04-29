@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const Home: NextPage = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
+    <div className="flex min-h-screen flex-col items-center justify-center">
       <Head>
         <title>
           Wacky Frontends: A Project by Wacky Dev, aided by Frontend Mentor
@@ -27,8 +27,30 @@ const Home: NextPage = () => {
             </Link>
           </div>
 
-          <div className="flex flex-row items-center justify-center">
-            <ul className="flex flex-row items-center justify-center gap-3"></ul>
+          <div className="">
+            <ul className="flex flex-row items-center justify-center gap-3">
+              <li className="">
+                <Link href="/projects">
+                  <a>Projects</a>
+                </Link>
+              </li>
+
+              <li className="">
+                <Link href="/about">
+                  <a>About</a>
+                </Link>
+              </li>
+
+              <li className="">
+                <a
+                  href="https://github.com/martinthewacky/wacky-frontends/wacky-frontends"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </header>
@@ -102,6 +124,11 @@ const Home: NextPage = () => {
           <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
         </a>
       </footer>
+      <style global jsx>{`
+        * {
+          transition: 0.2s ease;
+        }
+      `}</style>
     </div>
   )
 }
