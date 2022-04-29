@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Home: NextPage = () => {
   return (
@@ -12,9 +13,13 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className="flex h-16 w-full items-center justify-center border-b border-gray-400 px-4">
-        <div className="w-full">
-          <div className="flex h-full items-center justify-center"></div>
+      <header className="sticky top-0 flex h-16 w-full items-center justify-center border-b bg-white px-4">
+        <div className="flex h-full w-full items-center justify-between">
+          <div className="font-mono text-xl font-extrabold opacity-60 hover:opacity-100">
+            <Link href="/">
+              <a className="text-purple-500">Wacky Frontends</a>
+            </Link>
+          </div>
         </div>
       </header>
 
