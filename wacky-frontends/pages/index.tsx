@@ -6,9 +6,17 @@ const Home: NextPage = () => {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center py-2">
       <Head>
-        <title>Create Next App</title>
+        <title>
+          Wacky Frontends: A Project by Wacky Dev, aided by Frontend Mentor
+        </title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <header className="flex h-16 w-full items-center justify-center border-b border-gray-400 px-4">
+        <div className="w-full">
+          <div className="flex h-full items-center justify-center"></div>
+        </div>
+      </header>
 
       <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
         <h1 className="text-6xl font-bold">
