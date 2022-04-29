@@ -17,8 +17,18 @@ const Home: NextPage = () => {
         <div className="flex h-full w-full items-center justify-between">
           <div className="font-mono text-xl font-extrabold opacity-60 hover:opacity-100">
             <Link href="/">
-              <a className="text-purple-500">Wacky Frontends</a>
+              <a
+                className="text-purple-500"
+                title="Wacky Frontends"
+                aria-label="Go to Wacky Frontends homepage"
+              >
+                Wacky Frontends
+              </a>
             </Link>
+          </div>
+
+          <div className="flex flex-row items-center justify-center">
+            <ul className="flex flex-row items-center justify-center gap-3"></ul>
           </div>
         </div>
       </header>
